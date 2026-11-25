@@ -39,16 +39,16 @@ export default function GloboCorazon({ onExplode }: { onExplode: () => void }) {
             ? { duration: 0.9, ease: "easeOut" }
             : { duration: 3, repeat: Infinity, ease: "easeInOut" }
         }
-        style={{ width: 260, height: 260 }}
+        style={{ width: 220, height: 220 }}
       />
 
-      <div className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-6">
+      <div className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-5">
         {/* Fecha arriba, discreta */}
         <motion.p
           initial={{ opacity: 0, y: -14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35, duration: 0.9 }}
-          className="mb-10 text-center text-[11px] font-medium uppercase tracking-[0.42em] text-pink-400"
+          className="mb-8 text-center text-[10px] font-medium uppercase tracking-[0.35em] text-pink-400 sm:mb-10 sm:text-[11px] sm:tracking-[0.42em]"
         >
           Desde el 02 · 12 · 2023
         </motion.p>
@@ -79,7 +79,7 @@ export default function GloboCorazon({ onExplode }: { onExplode: () => void }) {
           >
             <svg
               viewBox="0 0 100 100"
-              className="h-[62vw] max-h-[340px] w-[62vw] max-w-[340px] drop-shadow-[0_18px_45px_rgba(236,72,153,0.35)]"
+              className="h-[58vw] max-h-[300px] w-[58vw] max-w-[300px] drop-shadow-[0_18px_45px_rgba(236,72,153,0.35)] sm:h-[62vw] sm:max-h-[340px] sm:w-[62vw] sm:max-w-[340px]"
             >
               <defs>
                 <radialGradient id="globoGrad" cx="35%" cy="28%" r="78%">
@@ -111,7 +111,7 @@ export default function GloboCorazon({ onExplode }: { onExplode: () => void }) {
                 : { duration: 0.3 }
             }
           >
-            <span className="mt-1 select-none text-[13vw] font-black leading-none tracking-tighter text-white/95 drop-shadow-[0_3px_10px_rgba(190,24,93,0.28)]">
+            <span className="mt-1 select-none text-[12vw] font-black leading-none tracking-tighter text-white/95 drop-shadow-[0_3px_10px_rgba(190,24,93,0.28)] sm:text-[13vw]">
               02
             </span>
           </motion.div>
@@ -152,7 +152,7 @@ export default function GloboCorazon({ onExplode }: { onExplode: () => void }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="relative z-10 mt-10 flex flex-col items-center gap-3"
+          className="relative z-10 mt-8 flex flex-col items-center gap-3 sm:mt-10"
         >
           <div className="flex items-center gap-2">
             {[0, 1, 2].map((i) => (

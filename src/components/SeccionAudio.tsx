@@ -163,7 +163,7 @@ export default function SeccionAudio({
     <section className="relative w-full overflow-hidden bg-gradient-to-b from-rose-50 via-white to-pink-100">
       <FondoDecorado seed={41} cantidad={30} color="#f9a8d4" intensidad={1.1} />
 
-      <div className="relative z-10 mx-auto max-w-4xl px-6 py-24">
+      <div className="relative z-10 mx-auto max-w-2xl px-5 py-20 sm:max-w-4xl sm:px-6 sm:py-24">
         {/* Cabecera */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -172,10 +172,7 @@ export default function SeccionAudio({
           transition={{ duration: 0.9 }}
           className="text-center"
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-pink-200 bg-white px-5 py-2 text-[11px] font-semibold uppercase tracking-[0.3em] text-pink-500 shadow-sm">
-            🎙️ Carta de voz
-          </span>
-          <h2 className="mt-7 font-serif text-[2.4rem] leading-tight tracking-tight text-pink-700 sm:text-5xl">
+          <h2 className="font-serif text-[2.1rem] leading-tight tracking-tight text-pink-700 sm:text-5xl">
             Si pudieras oírmelo todo
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-stone-500">
@@ -190,11 +187,11 @@ export default function SeccionAudio({
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="relative mt-14 overflow-hidden rounded-[2.5rem] border-[6px] border-white bg-white/80 p-6 shadow-[0_30px_80px_-28px_rgba(190,24,93,0.45)] backdrop-blur sm:p-9"
+          className="relative mt-12 overflow-hidden rounded-[2rem] border-[5px] border-white bg-white/80 p-5 shadow-[0_30px_80px_-28px_rgba(190,24,93,0.45)] backdrop-blur sm:mt-14 sm:rounded-[2.5rem] sm:border-[6px] sm:p-9"
         >
           {/* Espectro: siempre visible. Con sonido real se dibuja con Web Audio,
               en reposo muestra barras animadas de fondo. */}
-          <div className="relative h-32 w-full overflow-hidden rounded-2xl bg-gradient-to-b from-pink-50 to-white sm:h-40">
+          <div className="relative h-28 w-full overflow-hidden rounded-2xl bg-gradient-to-b from-pink-50 to-white sm:h-40">
             <canvas
               ref={canvasRef}
               width={1200}

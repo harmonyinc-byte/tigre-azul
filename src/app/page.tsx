@@ -55,9 +55,9 @@ export default function Page() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
-              className="relative flex h-32 items-center justify-center bg-white"
+              className="relative flex h-24 items-center justify-center bg-white sm:h-32"
             >
-              <span className="font-serif text-sm italic tracking-widest text-pink-300">
+              <span className="font-serif text-xs italic tracking-widest text-pink-300 sm:text-sm">
                 sigue deslizando
               </span>
             </motion.div>
@@ -82,7 +82,7 @@ export default function Page() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
             transition={{ delay: 1.6 }}
-            className="pointer-events-none fixed bottom-6 left-1/2 z-50 -translate-x-1/2"
+            className="pointer-events-none fixed bottom-4 left-1/2 z-50 -translate-x-1/2 sm:bottom-6"
           >
             <motion.div
               animate={{ y: [0, 7, 0] }}

@@ -70,7 +70,7 @@ export default function SeccionSobres() {
     >
       <FondoDecorado seed={57} cantidad={36} color="#f9a8d4" intensidad={1.3} />
 
-      <div className="relative z-10 mx-auto max-w-4xl px-6 py-24">
+      <div className="relative z-10 mx-auto max-w-2xl px-5 py-20 sm:max-w-4xl sm:px-6 sm:py-24">
         {/* Cabecera */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -79,10 +79,7 @@ export default function SeccionSobres() {
           transition={{ duration: 0.9 }}
           className="text-center"
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-pink-200 bg-white px-5 py-2 text-[11px] font-semibold uppercase tracking-[0.3em] text-pink-500 shadow-sm">
-            🎰 El destino secreto
-          </span>
-          <h2 className="mt-7 font-serif text-[2.4rem] leading-tight tracking-tight text-pink-700 sm:text-5xl">
+          <h2 className="font-serif text-[2.1rem] leading-tight tracking-tight text-pink-700 sm:text-5xl">
             Un sorteo. Un viaje.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-stone-500">
@@ -98,7 +95,7 @@ export default function SeccionSobres() {
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="relative mx-auto mt-14 max-w-lg"
+          className="relative mx-auto mt-12 max-w-xs sm:mt-14 sm:max-w-lg"
         >
           <div className="relative rounded-[2.5rem] border-8 border-white bg-gradient-to-br from-pink-100 via-rose-50 to-pink-200 p-3 shadow-[0_30px_80px_-25px_rgba(219,39,119,0.5)]">
             {/* Cabecera */}
@@ -204,7 +201,7 @@ export default function SeccionSobres() {
               initial={{ opacity: 0, y: 60 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="relative mx-auto mt-16 max-w-md"
+              className="relative mx-auto mt-14 max-w-sm sm:mt-16 sm:max-w-md"
             >
               {/* Carta */}
               <motion.div
@@ -281,7 +278,7 @@ export default function SeccionSobres() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mx-auto mt-20 max-w-2xl rounded-[2.5rem] border border-pink-200 bg-white/80 p-9 text-center shadow-[0_28px_70px_-30px_rgba(190,24,93,0.5)] backdrop-blur"
+          className="mx-auto mt-16 max-w-2xl rounded-[2rem] border border-pink-200 bg-white/80 p-7 text-center shadow-[0_28px_70px_-30px_rgba(190,24,93,0.5)] backdrop-blur sm:mt-20 sm:rounded-[2.5rem] sm:p-9"
         >
           <p className="text-3xl">💍</p>
           <h3 className="mt-5 font-serif text-3xl leading-tight text-pink-700 sm:text-4xl">

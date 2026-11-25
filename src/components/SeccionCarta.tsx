@@ -19,7 +19,7 @@ export default function SeccionCarta({
     <section className="relative min-h-[100svh] w-full overflow-hidden bg-white">
       <FondoDecorado seed={11} cantidad={28} color="#fbcfe8" />
 
-      <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-5xl flex-col items-center justify-center gap-14 px-6 py-20">
+      <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-5xl flex-col items-center justify-center gap-12 px-5 py-20 sm:px-6 sm:py-24">
         {/* Encabezado */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -28,7 +28,7 @@ export default function SeccionCarta({
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="text-center"
         >
-          <h2 className="font-serif text-[2.6rem] leading-[1.08] tracking-tight text-pink-700 sm:text-6xl">
+          <h2 className="font-serif text-[2.2rem] leading-[1.08] tracking-tight text-pink-700 sm:text-6xl">
             Tres años de
             <span className="block bg-gradient-to-r from-pink-400 via-rose-400 to-pink-500 bg-clip-text text-transparent">
               nosotros dos
@@ -43,7 +43,7 @@ export default function SeccionCarta({
         </motion.div>
 
         {/* Foto + fecha */}
-        <div className="grid w-full items-center gap-12 md:grid-cols-[1.05fr_1fr]">
+        <div className="grid w-full items-center gap-12 md:grid-cols-[1.05fr_1fr] md:gap-14">
           <motion.figure
             initial={{ opacity: 0, scale: 0.92, rotate: -2 }}
             whileInView={{ opacity: 1, scale: 1, rotate: -1.5 }}
