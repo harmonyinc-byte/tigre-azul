@@ -67,7 +67,7 @@ export default function Page() {
             <SeccionAudio
               audioSrc={asset("/audio/carta.mp3")}
               videoSrc={asset("/video/nosotros.mp4")}
-              poster={asset("/img/audio.jpg")}
+              poster={asset("/img/costa.jpg")}
             />
             <SeccionSobres />
           </motion.div>

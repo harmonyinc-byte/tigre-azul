@@ -21,7 +21,7 @@ export const DESTINOS: Destino[] = [
     subtitulo: "La primera escapada",
     imagen: asset("/img/gijon.jpg"),
     texto:
-      "Once grados y el Cantábrico rugiendo. Tú con el pelo revuelto por el viento y esa risa que todavía me arranca la sonrisa. Empezamos aquí, sin plan y sin miedo.",
+      "Un amanecer en el que solo se ve el cielo y nosotros. Sin más ruido que el mar de fondo y sin ninguna prisa por ir a ningún sitio. Empezamos aquí, sin plan y sin miedo.",
     etiqueta: "Norte",
     fecha: "Otoño",
   },
@@ -31,7 +31,7 @@ export const DESTINOS: Destino[] = [
     subtitulo: "Agua y sal",
     imagen: asset("/img/cullera.jpg"),
     texto:
-      "Arena fina, un helado que se derritió antes de probarlo y esas noches paseando al lado del mar. Aprendí que contigo hasta lo sencillo se vuelve viaje.",
+      "Arena fina, sol en la piel y ese beso que no queríamos que terminara. Un helado que se derritió antes de probarlo y esas noches paseando al lado del mar.",
     etiqueta: "Valencia",
     fecha: "Verano",
   },
@@ -41,7 +41,7 @@ export const DESTINOS: Destino[] = [
     subtitulo: "Donde todo brillaba",
     imagen: asset("/img/granada.jpg"),
     texto:
-      "La Alhambra al atardecer y tú mirándola desde la torre del Carmen. Dijiste que querías vivir aquí. Yo solo pensaba en lo bien que te quedabas mirándome.",
+      "La Alhambra al fondo, el agua verde esmeralda y nosotros posando como si no supiéramos que nos estaban mirando. Dijiste que querías vivir aquí. Yo solo pensaba en la foto.",
     etiqueta: "Andalucía",
     fecha: "Primavera",
   },
@@ -51,7 +51,7 @@ export const DESTINOS: Destino[] = [
     subtitulo: "El viaje de los dos",
     imagen: asset("/img/costarica.jpg"),
     texto:
-      "Selva, café y un amanecer que ninguno de los dos madrugó para fotografiar. La primera vez que el mundo nos pareció demasiado grande... y aun así nos cabíamos en él.",
+      "Piscina, agua clara y nosotros sin movernos del sitio. La primera vez que el mundo nos pareció demasiado grande... y aun así nos cabíamos en él.",
     etiqueta: "El mundo",
     fecha: "Siempre",
   },
@@ -61,7 +61,7 @@ export const DESTINOS: Destino[] = [
     subtitulo: "Nuestro anclaje",
     imagen: asset("/img/cadiz.jpg"),
     texto:
-      "La última escapada antes de volver. Calles empedradas, risas y el atardecer que nos dejó quietos en el espigón. Aquí sellamos la promesa de que esto no se acaba.",
+      "Caminando de la mano hacia el mar, sin hablar y sin mirar atrás. La última escapada antes de volver, y aquí sellamos la promesa de que esto no se acaba.",
     etiqueta: "Cádiz",
     fecha: "Desde 2023",
   },
@@ -71,7 +71,7 @@ export const DESTINOS: Destino[] = [
     subtitulo: "El viaje más inesperado",
     imagen: asset("/img/polonia.jpg"),
     texto:
-      "Un país que no habíamos visto en ningún plan y que acabó siendo de los que más queríamos repetir. Calles con historia, nieve en el recuerdo y un chocolate caliente que seguimos buscando en cada ciudad.",
+      "Un palacio amarillo y blanco, un camino de adoquines y nosotros de espaldas, abrazados. El viaje más inesperado y el que más queremos repetir.",
     etiqueta: "El este",
     fecha: "A contramano",
   },
