@@ -65,6 +65,16 @@ export const DESTINOS: Destino[] = [
     etiqueta: "Cádiz",
     fecha: "Desde 2023",
   },
+  {
+    slug: "polonia",
+    nombre: "Polonia",
+    subtitulo: "El viaje más inesperado",
+    imagen: asset("/img/polonia.jpg"),
+    texto:
+      "Un país que no habíamos visto en ningún plan y que acabó siendo de los que más queríamos repetir. Calles con historia, nieve en el recuerdo y un chocolate caliente que seguimos buscando en cada ciudad.",
+    etiqueta: "El este",
+    fecha: "A contramano",
+  },
 ];
 
 export const SOBRES = [

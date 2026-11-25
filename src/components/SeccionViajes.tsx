@@ -58,7 +58,7 @@ export default function SeccionViajes() {
             Nuestro mapa de fondo
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-[15px] leading-relaxed text-stone-500">
-            Cinco bolos, cinco sorteos, cinco veces que la vida nos llevó a
+            Seis bolos, seis sorteos, seis veces que la vida nos llevó a
             algún sitio. Y en todos ellos, tú ibas con la mejor foto del
             carrete.
           </p>
@@ -182,63 +182,6 @@ export default function SeccionViajes() {
           </div>
         </motion.div>
 
-        {/* Fichas de viaje */}
-        <div className="mt-24 space-y-8">
-          {DESTINOS.map((d, i) => (
-            <motion.article
-              key={d.slug}
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.25 }}
-              transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              className={`grid items-center gap-8 md:gap-14 ${
-                i % 2 === 0 ? "md:grid-cols-[1.1fr_1fr]" : "md:grid-cols-[1fr_1.1fr]"
-              }`}
-            >
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9, x: i % 2 === 0 ? -50 : 50 }}
-                whileInView={{ opacity: 1, scale: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 1 }}
-                className={`relative ${
-                  i % 2 === 0 ? "md:order-1" : "md:order-2"
-                }`}
-              >
-                <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border-[5px] border-white shadow-[0_26px_65px_-22px_rgba(190,24,93,0.45)]">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={d.imagen}
-                    alt={d.nombre}
-                    className="h-full w-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-pink-900/45 via-transparent to-transparent" />
-                  <span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-pink-600 backdrop-blur">
-                    {d.etiqueta}
-                  </span>
-                </div>
-              </motion.div>
-
-              <div className={i % 2 === 0 ? "md:order-2" : "md:order-1"}>
-                <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-pink-400">
-                  {String(i + 1).padStart(2, "0")} · {d.fecha}
-                </p>
-                <h3 className="mt-3 font-serif text-4xl font-bold leading-none tracking-tight text-pink-700 sm:text-5xl">
-                  {d.nombre}
-                </h3>
-                <p className="mt-2 font-serif text-lg italic text-pink-400">
-                  {d.subtitulo}
-                </p>
-                <p className="mt-5 text-[15px] leading-relaxed text-stone-500">
-                  {d.texto}
-                </p>
-                <div className="mt-6 flex items-center gap-3">
-                  <span className="h-px flex-1 bg-gradient-to-r from-pink-200 to-transparent" />
-                  <span className="text-pink-300">♥</span>
-                </div>
-              </div>
-            </motion.article>
-          ))}
-        </div>
       </div>
     </section>
   );

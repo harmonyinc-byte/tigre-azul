@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import GloboCorazon from "@/components/GloboCorazon";
 import SeccionCarta from "@/components/SeccionCarta";
 import SeccionViajes from "@/components/SeccionViajes";
+import SeccionExposicion from "@/components/SeccionExposicion";
 import SeccionAudio from "@/components/SeccionAudio";
 import SeccionSobres from "@/components/SeccionSobres";
 import { asset } from "@/lib/assets";
@@ -62,6 +63,7 @@ export default function Page() {
             </motion.div>
 
             <SeccionViajes />
+            <SeccionExposicion />
             <SeccionAudio
               audioSrc={asset("/audio/carta.mp3")}
               videoSrc={asset("/video/nosotros.mp4")}
