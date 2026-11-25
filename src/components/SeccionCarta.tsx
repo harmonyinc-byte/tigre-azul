@@ -97,7 +97,7 @@ export default function SeccionCarta({
               mis ojos. Empezamos el{" "}
               <span className="font-semibold text-pink-600">{FECHA}</span> y
               desde entonces cada plan, cada broma, cada{" "}
-              <span className="italic text-pink-600">"te quiero"</span> ha sido
+              <span className="italic text-pink-600">&ldquo;te quiero&rdquo;</span> ha sido
               el mejor inventario del día.
             </p>
 

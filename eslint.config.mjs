@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Artefactos de build anidados (por error de rutas en Windows):
+    "**/.next/**",
+    "**/out/**",
+    "node_modules/**",
   ]),
 ]);
 

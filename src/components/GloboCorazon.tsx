@@ -12,8 +12,6 @@ export default function GloboCorazon({ onExplode }: { onExplode: () => void }) {
   const [pulsos, setPulsos] = useState(0);
   const [explotando, setExplotando] = useState(false);
 
-  const ESCALA = [1, 1.22, 1.46, 1.72];
-
   const tocar = () => {
     if (explotando) return;
     if (pulsos < 3) {
