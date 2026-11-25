@@ -98,7 +98,7 @@ export default function SeccionCarta({
               <span className="font-semibold text-pink-600">{FECHA}</span> y
               desde entonces cada plan, cada broma, cada{" "}
               <span className="italic text-pink-600">&ldquo;te quiero&rdquo;</span> ha sido
-              el mejor inventario del día.
+              lo mejor de cada día.
             </p>
 
             <p className="mt-6 font-serif text-lg leading-[1.85] text-stone-600 sm:text-xl">
