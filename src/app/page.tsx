@@ -7,6 +7,7 @@ import SeccionCarta from "@/components/SeccionCarta";
 import SeccionViajes from "@/components/SeccionViajes";
 import SeccionAudio from "@/components/SeccionAudio";
 import SeccionSobres from "@/components/SeccionSobres";
+import { asset } from "@/lib/assets";
 
 export default function Page() {
   const [fase, setFase] = useState<"globo" | "carta">("globo");
@@ -45,7 +46,7 @@ export default function Page() {
             animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           >
-            <SeccionCarta foto="/img/pareja.jpg" firma="Tu novio" />
+            <SeccionCarta foto={asset("/img/pareja.jpg")} firma="Tu novio" />
 
             {/* Separador de transición */}
             <motion.div
@@ -61,7 +62,11 @@ export default function Page() {
             </motion.div>
 
             <SeccionViajes />
-            <SeccionAudio audioSrc="/audio/carta.mp3" videoSrc="/video/nosotros.mp4" poster="/img/audio.jpg" />
+            <SeccionAudio
+              audioSrc={asset("/audio/carta.mp3")}
+              videoSrc={asset("/video/nosotros.mp4")}
+              poster={asset("/img/audio.jpg")}
+            />
             <SeccionSobres />
           </motion.div>
         )}
